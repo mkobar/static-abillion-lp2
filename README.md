@@ -1,2 +1,2 @@
-# static-amillion-lp
-Landing page for African Millionaire and Billionaire .com
+# static-abillion-lp2
+Landing page for African Billionaire .com
