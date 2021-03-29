@@ -1,2 +1,2 @@
-# static-abillion-lp2
-Created with CodeSandbox
+# static-amillion-lp
+Landing page for African Millionaire and Billionaire .com

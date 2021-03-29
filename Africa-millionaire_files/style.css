@@ -1,0 +1,1667 @@
+/*
+Theme Name: BusinessTech 2019
+Theme URI: https://businesstech.co.za
+Author: BusinessTech
+Author URI: https://businesstech.co.za
+Description: BusinessTech 2019 theme design
+Version: 1.0
+
+*/
+
+/* Webfont: ProximaNova */@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima_nova_reg.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: ProximaNovaBold */@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima_nova_reg_bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Bold */@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */
+         url('fonts/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Lato-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Regular */@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Lato";
+    margin: 0px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background: #f1f1f1;
+}
+body * {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a {
+    color: #1173b4;
+    text-decoration: none;
+}
+.entry-content a:hover {
+    text-decoration: underline;
+}
+.site {
+    position: relative;
+    z-index: 10;
+    width: 1020px;
+    margin: 0 auto;
+    background: #fff;
+    border-left: solid 1px #f1f1f1;
+    border-right: solid 1px #f1f1f1;
+}
+.skip-link {
+    display: none;
+}
+
+/* LOGO */
+.site-title {
+    display: none;
+}
+.logo {
+    display: block;
+    width: 300px;
+    height: 63px;
+    margin: 0 auto;
+}
+.logo:hover {
+    opacity: 0.6;
+}
+.logo img {
+
+}
+.header_ad {
+    margin: 20px 0px 30px;
+    width: 100%;
+    text-align: center;
+}
+.header_ad .ad {
+    display: inline-block;
+}
+h3 {
+    font-size: 18pt;
+}
+.top_newsletter {
+    width: 230px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 7px;
+}.top_social {
+    width: 230px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 7px;
+}
+/* ----------- */
+
+
+/* MAIN CONTENT */
+.site-header-main {
+    border-top: .5rem solid #222;
+}
+.site-main {
+    margin: 0px 30px 0px 30px;
+    display: block;
+    min-height: 100vh;
+}
+.box-title {
+    margin-bottom: 20px;
+    border-bottom: solid 2px #f1f1f1;
+    margin-top: 10px;
+}
+.box-title h2 {
+    margin: 5px 0px -1px 0px;
+    padding-top: 5px;
+    border-bottom: solid 2px #333;
+    display: inline-block;
+    padding-bottom: 6px;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+}
+.box-title .title-linked {
+    color: #333;
+    text-decoration: none;
+}
+.float-newsletter-bar ._option {
+    position: relative;
+}
+.type-page {
+    padding-top: 20px;
+}
+/* ----------- */
+
+/* NAVIGATION */
+.menu {
+    margin-top: 25px;
+    border-top: 2px dotted #222;
+    border-bottom: 1px solid #222;
+}
+.menu ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 0px 30px;
+    padding: 0px;
+}
+.menu ul li {
+    list-style: none;
+    display: block;
+    flex: 0 1 auto;
+    text-align: center;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 12px 0px;
+    font-size: 15px;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+    text-transform: uppercase;
+}
+.menu ul li a:hover {
+    text-decoration: none;
+    color: #777;
+}
+.sub-menu {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.96);
+    justify-content: space-between;
+    display: none;
+    width: 960px;
+    padding: 10px 30px;
+    z-index: 3;
+    border-bottom: solid 1px #eee;
+}
+.sub-menu ul {
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+}
+.sub-menu ul li {
+    list-style: none;
+    margin: 5px 0px;
+}
+.sub-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 0px;
+    font-size: 15px;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.sub-menu ul li a:hover {
+    color: #777;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.nav-search-bar {
+    width: 960px;
+    padding: 48px 0px;
+    text-align: center;
+    font-size: 41pt;
+    border: none;
+    color: #666;
+    background: none;
+    margin: 0px 10px;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+}
+.nav-search-bar:focus {
+    outline: none;
+}
+.search-menu i {
+    pointer-events: none;
+}
+.categories-menu i {
+    pointer-events: none;
+}
+.mobile-site-header {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    height: 50px;
+    background: #fff;    
+    border-bottom: solid 1px #ddd;
+    border-top: solid 2px #222;
+}
+.mobile-logo {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+.mobile-logo img {
+    width: 100%;
+    height: 50px;
+}
+.mobile-menu-button {
+    line-height: 50px;
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #ffffff;
+}
+.mobile-menu-button:hover {
+    transition: all 0.3s;
+    color: #f1f1f1;
+}
+.mobile-search-button {
+    line-height: 50px;
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #ffffff;
+}
+.mobile-search-button:hover {
+    transition: all 0.3s;
+    color: #f1f1f1;
+}
+.mobile-menu-close {
+    line-height: 50px;
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    pointer-events: none;
+    z-index: 12;
+}
+.mobile-overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 11;
+}
+.mobile-menu {
+    position: fixed;
+    z-index: 12;
+    background: #fff;
+    width: 80%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    margin-left: -80%;
+    overflow: scroll;
+}
+.mobile-menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.mobile-menu ul li a {
+    color: #333;
+    display: block;
+    padding: 14px 20px;
+    border-bottom: solid 1px #f1f1f1;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.3s;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+    text-transform: uppercase;
+}
+.mobile-menu ul li a:hover {
+    background: #f1f1f1;
+    transition: all 0.3s;
+    color: #777;
+}
+.mobile-expand i {
+    float: right;
+}
+.mobile-menu ul li ul {
+    display: none;
+}
+.mobile-menu ul li ul li a {
+    background: #f8f8f8;
+    padding: 14px 35px;
+    transition: all 0.3s;
+}
+.mobile-menu ul li ul li a:hover {
+    background: #d3d3d3;
+    transition: all 0.3s;
+}
+.mobile-search-bar {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 11;
+    height: 50px;
+    background: #fff;   
+}
+.mobile-search-bar .search-bar-button {
+    line-height: 50px;
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    text-align: center;
+    color: #888;
+}
+.mobile-search-bar .search-bar-close {
+    line-height: 50px;
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    text-align: center;
+    color: #888;
+    cursor: pointer;
+}
+.mobile-search-bar form {
+    line-height: 50px;
+    position: absolute;
+    left: 50px;
+}
+.mobile-search-bar form input {
+    min-width: 210px;
+    border: none;
+    outline: none;
+    font-size: 12pt;
+    color: #555;
+}
+
+/* FOLLOW US */
+.follow-buttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;   
+}
+.follow-buttons a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: solid 1px #ddd;
+    transition: all 0.3s;
+}
+.follow-buttons a:hover {
+    background: #333 !important;
+    color: #fff !important;
+}
+.mobile-footer-menu .follow-buttons {
+    max-width: 150px;
+    margin: 0 auto;
+}
+.mobile-footer-menu .follow-buttons a {
+    background: none;
+    border: none;
+}
+.mobile-footer-menu .follow-buttons a:hover {
+    color: #fff;
+    border: none;
+    background: none;
+}
+/* ----------- */ 
+
+/* FOOTER */
+.site-footer {
+    width: 1022px;
+    margin: 0 auto;
+    z-index: 9;
+    position: relative;
+    background: #F1F1F1;
+}
+.site-footer .site-info {
+    background: #ffffff;
+    padding: 20px 0px;
+}
+.site-footer .footer-sub-menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    background: none;
+    justify-content: space-between;
+    margin: 0px 30px;
+    width: 960px;
+    border-top: solid 1px #ddd;
+    padding-top: 20px;
+}
+.site-footer a {
+    color: #3e3e3e;
+    font-size: 10pt;
+}
+.site-footer a:hover {
+    color: #ddd;
+}
+.site-footer ul {
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+}
+.site-footer ul li {
+    margin: 4px 0px;
+    list-style: none;
+}
+.site-footer .footer-header {
+    margin-bottom: 10px;
+}
+.site-footer .footer-header a {
+    color: #3e3e3e;
+    font-size: 14pt;
+    font-weight: 600;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+}
+.mobile-footer-menu {
+    display: none;
+    text-align: center;
+    border-top: solid 3px #333;
+    margin-bottom: 70px;
+    padding-top: 15px;
+}
+.site-footer .mobile-footer-menu a {
+    font-size: 12pt;
+    margin: 0 5px;
+}
+/* ----------- */
+
+/*FOOTER LOGOS*/
+
+.logo-column-1 img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-logos-inner {
+    width: 1150px;
+    margin: auto;
+}
+
+.clearfix:after, .clearfix:before {
+    content: " ";
+    display: table;
+}
+
+.footer-logos-three-columns {
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+.footer-logos-three-columns>.footer-logos-three-columns-inner {
+    margin: 0 -12px;
+}
+
+.footer-logos-three-columns .footer-logos-column {
+    width: 33.33%;
+    float: left;
+}
+
+.footer-logos-three-columns .footer-logos-column .logo-column-inner {
+    padding: 0 12px;
+}
+/* ----------- */
+
+/* NEWSLETTER STYLING */
+.subscribe-form {
+    width: auto;
+    border: solid 1px #ddd;
+    margin: 0px;
+    height: 36px;
+    background: #fff;
+}
+.newsletter-subscribe {
+    border: 0;
+    padding-left: 10px;
+    line-height: 32px;
+    width: calc(100% - 110px);
+    float: left;
+    outline: none;
+    margin: 0px;
+    background: none;
+}
+.newsletter-subscribe:focus {
+    outline: none;
+}
+.newsletter-response {
+    text-align: center;
+    width: 100%;
+    display: block;
+    line-height: 34px;
+    font-size: 9pt;
+    color: #888;
+}
+.subscribe-class {
+    border-radius: 0px;
+    border: 0;
+    background: #c33;
+    color: #fff;
+    line-height: 36px;
+    float: right;
+    padding: 0px 15px;
+    margin: 0px;
+    height: 36px;
+    font-size: 9pt;
+    font-weight: bold;
+}
+.subscribe-class:hover {
+    cursor: pointer;
+    background: #a21a1a;
+}
+.follow-subscribe {
+    width: 100%;
+    margin-top: 20px;
+}
+.article-top-newsletter {
+    float: right;   
+    width: 300px;
+}
+.article-bottom-newsletter {
+    margin-top: 20px;
+}
+.top-subscribe {
+    float: left;
+    margin-left: 30px;
+    width: 100%;
+    max-width: 230px;
+    margin-top: 12px;
+}
+.float-newsletter-bar {
+    background: #c33;
+    padding: 15px 0px;
+    color: #fff;
+    position: fixed; 
+    bottom: -100px;
+    z-index: 11;
+    width: 100%;
+}
+.float-newsletter-bar .newsletter-form {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.float-newsletter-bar form {
+    width: 100%;
+}
+.float-newsletter-bar .newsletter-caption {
+    line-height: 36px;
+    width: 50%;
+}
+.float-newsletter-bar .close-newsletter {
+    cursor: pointer;
+    line-height: 36px;
+    margin-left: 5px;
+    padding: 0px 15px;
+}
+
+.fixed-mobile-banner {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 15;
+}
+
+.fixed-mobile-banner .fixed-mobile-banner-content{
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grecaptcha-badge {
+    bottom: 80px !important;
+}
+/* ----------- */
+/* NEWS FEED STYLING */
+.feature_ad {
+    margin-bottom: 20px;  
+}
+.feature_article {
+    position: relative;
+}
+.feature_article header .entry-title a {
+    font-size: 24pt;
+    color: #fff;
+    line-height: 26pt;
+}
+.feature_article header .entry-title a:hover {
+    color: #274d89;
+}
+.feature_article header .entry-title {
+    line-height: 21pt;
+    text-decoration: none;
+}
+.feature_article header .category-caption {
+    color: #fff;
+}
+.feature_article .post-thumbnail {
+    display: block;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+}
+.feature_article .post-thumbnail img {
+    margin-top: -60px;
+}
+.feature_article .meta_date {
+    color: #fff;
+}
+.feature_article header {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    z-index: 2;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.65);
+    min-width: 600px;
+}
+.feature_article_container {
+    margin-bottom: 20px;
+    padding-top: 30px;
+    display: inline-block;
+    width: 630px;
+}
+.row_article_container {
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 660px;
+}
+.mobile_row_article_container {
+    display: none;
+}
+.row_article_container .row_article {
+    width: 300px;
+    position: relative;
+}
+.row_article_container .category-caption {
+    margin-top: 8px;
+    display: block;
+    margin-bottom: 5px;
+}
+.row_article_container .presented-title {
+    margin-top: 0px;
+}
+.below_row_article_container {
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0px 0px 30px;
+    width: 630px;
+}
+.below_row_article_container .row_article {
+    width: 300px;
+}
+.below_row_article_container .row_article .post-thumbnail {
+    height: auto;
+    min-height: 100px;
+    max-height: 200px;
+}
+.below_row_article_container .entry-header {
+    padding-top: 10px;
+}
+.row_article_container_line {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #eee;
+    width: 100%;
+}
+.below_article_feed {
+    margin-top: 20px;
+}
+.below_article_feed .entry-title a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14pt;
+    line-height: 18pt;
+}
+.below_article_feed .entry-title {
+    margin: 0px;
+    line-height: 16pt;
+}
+.row_article header {
+
+}
+.row_article .post-thumbnail {
+    display: block;
+    overflow: hidden;
+    height: 160px;
+    background: #f5f5f5;
+}
+.row_article .post-thumbnail img {
+    margin-top: -20px;
+}
+.entry-title {
+    margin: 0px;
+    line-height: 18pt;
+    margin-top: 3px;
+}
+.entry-title a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: 600;
+}
+.entry-title a:hover {
+    text-decoration: none;
+    color: #274d89;
+}
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+}
+.post-thumbnail img:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+.feed_article_container {
+    width: 630px;
+    float: left;
+}
+.feed_artice_side {
+    float:right;
+    width: 300px;
+    padding-top: 30px;
+}
+.feed_article {
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #eee;
+}
+.feed_article .post-thumbnail {
+    width: 200px;
+    max-height: 135px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    min-height: 135px;
+    line-height: 0px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.meta_date {
+    color: #ababad;
+    margin-top: 5px;
+    font-size: 10pt;
+    font-weight: 400;
+    display: inline-block;
+}
+.meta_comments {
+    font-size: 10pt;
+    margin-top: 5px;   
+}
+.feed_leaderboard {
+    width: 100%;
+    text-align: center;
+}
+.feed-button {
+    padding: 10px 0px;
+    color: #333;
+    background: #77b7d9;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 14pt;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+}
+.feed-button:hover {
+    color: #fff;
+    background: #62c0ff;
+    text-decoration: none;
+}
+.side_feed_article_container {
+    margin-top: 20px;
+}
+.side_feed_article_container .post-thumbnail {
+    display: block;
+    width: 300px;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    min-height: 100px;
+    background: #f5f5f5;
+}
+.side_feed_article_container .post-thumbnail img {
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+}
+.side_feed_article_container .entry-header {
+    background: none;
+    padding-top: 0px;
+    position: initial;
+}
+.side_feed_article_container a {
+    font-size: 14pt;
+    line-height: 14pt;
+}
+.side_feed_article_container .row_article {
+    border-bottom: solid 1px #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.side_feed_article_container .ad {
+    border-bottom: solid 1px #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.home-posts-navigation {
+    width: 630px;
+    float: left;
+}
+.home-posts-navigation a {
+    padding: 10px 0px;
+    color: #3e3e3e;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+    border: solid 1px #ddd;
+}
+.home-posts-navigation a:hover {
+    background: #d3d3d3;
+    text-decoration: none;
+}
+.page-posts-navigation {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 630px;
+    float: left;
+}
+.page-posts-navigation a {
+    padding: 10px 0px;
+    color: #3e3e3e;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+    width: 460px;
+    display: block;
+    flex: 0 1 auto;
+    border: solid 1px #ddd;
+}
+.page-posts-navigation a:hover {
+    background: #d3d3d3;
+    text-decoration: none;
+}
+.nav-seperator {
+    width: 20px;
+}
+.category-caption {
+    color: #274d89;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 16pt;
+    margin-right: 6px;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+}
+.category-caption:hover {
+    color: #000;
+}
+/* ----------- */
+
+/* ARTICLE VIEW */
+.the-post {
+    width: 630px;
+    float: left;
+    padding-top: 20px;
+}
+.the-post .article-title {
+    line-height: 30pt;
+    font-size: 26pt;   
+}
+.the-post .post .post-thumbnail {
+    pointer-events: none;
+    display: block;
+    max-height: 400px;
+    min-height: 230px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+.the-post .ad {
+    text-align: center;
+    margin-top: 20px;
+    margin: 0 auto;
+    width: fit-content;
+}
+.below_article_feed .ad {
+    width: 100%;
+}
+.single-side {
+    float: right;
+    width: 300px;
+    padding-top: 30px;
+}
+.article-title {
+    font-size: 24pt;
+}
+.entry-content p {
+    color: #333;
+    font-weight: 400;
+    font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Roboto, Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 20px;
+}
+.entry-content p a {
+    color: #333;
+    font-weight: 400;
+    border-bottom: solid 2px #274d89;
+}
+.entry-content p a:hover {
+    background: #274d89;
+    text-decoration: none;
+    color: #fff;
+}
+.entry-content li a {
+    color: #333;
+    font-weight: 400;
+    border-bottom: solid 2px #274d89;
+}
+.entry-content li a:hover {
+    background: #274d89;
+    text-decoration: none;
+    color: #fff;
+}
+.entry-content p strong {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.entry-content ul li {
+    color: #333;
+    font-weight: 400;
+    font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Roboto, Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-left: 5px;
+}
+.entry-content ul li strong {
+    font-weight: 600;
+}
+.entry-content ol li {
+    color: #333;
+    font-weight: 400;
+    font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Roboto, Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+.entry-content ol li strong {
+    font-weight: 600;
+}
+.mobile-article-leaderboard {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.aligncenter {
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    -webkit-backface-visibility: hidden;
+}
+.size-full {
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    -webkit-backface-visibility: hidden;
+}
+.alignright {
+    float: right; margin: 0 0 1em 1em;
+}
+.alignleft {
+    float: left; margin: 0 1em 1em 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    display: block;
+}
+.tags a {
+    color: #3e3e3e;
+    text-transform: CAPITALIZE;
+    font-size: 9pt;
+    padding: 5px 12px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 4px;
+    transition: all 0.3s;
+    border: solid 1px #ddd;
+}
+.tags a:hover {
+    background: #d3d3d3;
+    text-decoration: none;
+}
+.entry-footer {
+    border-top: solid 1px #eee;
+    margin-bottom: 20px;
+}
+.article-meta {
+    color: #666666;
+    margin-top: 10px;
+    font-size: 11pt;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.article-meta .post-date {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.article-meta a {
+    color: #666666;
+}
+.article-meta a:hover {
+    color: #383838;
+    text-decoration: none;
+}
+.article-newsletter {
+    float: right;   
+}
+.article-share-buttons a {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    height: 38px;
+    margin-right: 13px;
+    width: 38px;
+    transition: all 0.3s;
+    background: #fff;
+    line-height: 38px;
+    transition: all 0.3s;
+    border: solid 1px #ddd;
+}
+.article-share-buttons a:hover {
+    background: #444;
+    color: #fff;
+}
+.facebook-share { color: #3B5998; transition: all 0.3s; }
+.twitter-share { color: #55ACEE; transition: all 0.3s; }
+.googleplus-share { color: #db4437; transition: all 0.3s; }
+.whatsapp-share { color: #1ebea5; transition: all 0.3s; }
+.linkedin-share { color: #0077B5; transition: all 0.3s; }
+.email-share { color: #bababa; transition: all 0.3s; }
+.rss-share { color: #f0a52d; transition: all 0.3s; }
+.counter {
+    color: #333;
+    float: left;
+    text-align: center;
+    padding-right: 12px;
+}
+.counter .number {
+    font-size: 20pt;
+    line-height: 0px;
+    margin-top: 12px;
+    margin-bottom: 13px;   
+}
+.counter .share-text {
+    font-size: 9pt;
+    height: 13px;
+}
+.social-section {
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+.social-section ._form {
+    text-decoration: none;
+    vertical-align: middle;
+    min-width: 275px;
+    width: 275px;  
+}
+.bottom-share {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.bottom-share a {
+    color: #fff;
+    display: block;
+    flex: 0 1 auto;
+    text-align: center;
+    width: 49%;
+    font-size: 10pt;
+    padding: 6px 0px;
+    transition: all 0.3s;
+    border: none;
+}
+.bottom-share a:hover {
+    text-decoration: none;
+    background: #636363;
+    border: none;
+}
+.bottom-share a i {
+    margin-right: 5px;
+}
+.bottom-facebook-share {
+    background: #3B5998;
+}
+.bottom-twitter-share {
+    background: #177CBA;
+}
+.entry-content p iframe {
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+.entry-content iframe {
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+.presented-title {
+    background-color: #f1f1f1;
+    font-size: 11pt;
+    padding: 5px 12px;
+    display: inline-block;
+    color: #274d89;
+    margin-right: 7px;
+    border-radius: 0px;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+}
+.presented-article-title {
+background-color: #f1f1f1;
+    font-size: 14px;
+    padding: 5px 12px;
+    color: #274d89;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+}
+.show-comments {
+    width: auto;
+    color: #3e3e3e;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+    padding: 10px !important;
+    background: #ffffff !important;
+    text-align: center;
+    border: solid 1px #ddd;
+}
+.show-comments:hover {
+    background: #d3d3d3 !important;
+}
+.comments-policy span {
+    color: #bf2b2b;
+}
+.switch {
+    background: #333;
+    height: 12px;
+    width: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-left: 2px;
+    cursor: pointer;
+    opacity: 0.2;
+    line-height: 18px;
+}
+.toggle {
+    background: #fff;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    left: 1px;
+}
+.auto-load-label {
+    font-size: 10pt;
+    font-weight: 300;
+    text-transform: initial;
+    float: right;
+    color: #aaa;
+    line-height: 34px;
+    margin-left: 10px;
+}
+blockquote {
+    font-style: italic;
+    border-left: solid 2px #ddd;
+    border-radius: 2px;
+    padding-left: 15px;
+    margin-left: 25px;
+}
+figure {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+figure img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+figcaption {
+    color: #555;
+    font-size: 10pt;   
+}
+#disqus_thread {
+    outline:0;
+}
+/* ----------- */
+
+/* POLLS */
+.wp-polls-form p strong {
+    font-weight: 300;
+}
+.wp-polls-form p a {
+    font-size: 9pt;
+    text-decoration: none;
+    color: #777;
+}
+.wp-polls-form p a:hover {
+    color: #333;
+}
+.wp-polls-form .Buttons {
+    width: 100%;
+    padding: 10px !important;
+    color: #3e3e3e;
+    background: #ffffff !important;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 14px;
+    margin-bottom: 5px;
+    -webkit-appearance: none;
+    border: solid 1px #ddd;
+    border-radius: 0px;
+}
+.wp-polls-form .Buttons:hover {
+    background: #d3d3d3 !important;
+}
+.wp-polls ul {
+    margin: 0px;
+    padding: 0px;
+}
+.wp-polls ul li {
+    border-bottom: 1px solid #f1f1f1 !important;
+    margin-bottom: 10px !important;
+    padding-bottom: 12px !important
+}
+.wp-polls-ans p {
+    margin: 0px;
+}
+.wp-polls .list li:last-child {
+    border: none !important;
+    text-align: center;
+    font-size: 10pt;
+}
+.wp-polls .list li:nth-last-child(2) {
+    border: none !important;
+    margin-bottom: 5px !important;
+    padding-bottom: 0px !important;
+}
+.wp-polls .pollbar {
+    background: #274d89 !important;
+    border: 1px solid #274d89 !important;
+}
+/* ----------- */
+
+/* ARTICLE TOP BAR */
+
+.article-top-bar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    border-bottom: solid 1px #ddd;
+    margin-top: -70px;
+    border-top: .5rem solid #222;
+}
+.article-top-bar .article-top-bar-title div {
+    color: #2d3339;
+    font-size: 18pt;
+    font-weight: 600;  
+    line-height: 60px;
+    display: block;
+    float: none;
+    width: 2000px;
+    position: relative;
+}
+.article-top-bar .article-top-bar-title {
+    display: block;
+    float: none;
+    position: relative;
+    overflow: hidden;
+}
+.article-top-bar .article-top-bar-logo img {
+    width: 100%;
+    height: 100%;
+}
+.article-top-bar .article-top-bar-logo {
+    height: 60px;
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+    transition: all 0.3s;
+    margin-left: 20px;
+    padding-right: 10px;
+}
+.article-top-bar .article-top-bar-logo:hover {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.article-top-bar-share {
+    float: right;
+    line-height: 60px;
+    color: #888;
+    margin-right: 30px;   
+}
+.article-top-bar-share a {
+    display: inline-block;
+    float: right;
+    text-align: center;
+    height: 38px;
+    margin-left: 14px;
+    width: 38px;
+    line-height: 38px;
+    transition: all 0.3s;
+    margin-top: 10px;
+    border: solid 1px #ddd;
+}
+.article-top-bar-share a:hover {
+    background: #2d3339;
+    transition: all 0.3s;
+}
+
+/* ------------ */
+
+/* SIDEBAR */
+.side-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* ----------- */
+
+/* STICKY SIDEBAR */
+.theiaStickySidebar {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;   
+}
+/* ----------- */
+
+/* GALLERY */
+.the-post .gallery:after {content:"";display:table;clear:both;}
+.the-post img.aligncenter, .the-post div.aligncenter, .the-post figure.aligncenter, .the-post img.wp-post-image {display:block; margin: 0 auto;}
+.the-post img.alignright, .the-post div.alignright, .the-post figure.alignright {float:right; margin:1em 0 1em 2em;}
+.the-post img.alignleft, .the-post div.alignleft, .the-post figure.alignleft, .the-post img.wp-post-image.attachment-thumb {float:left; margin:1em 1em 2em 0;}
+.the-post figure {max-width: 100%; height: auto; margin:1em 0;}
+.the-post p img.alignright, p img.alignleft {margin-top:0;}
+.the-post .gallery figure img {max-width:100%; height:auto; margin:0 auto; display:block;}
+.the-post .gallery figure {float:left; margin:0 2% 1em 0;}
+.the-post .gallery.gallery-columns-1 figure {width:100%; margin:0 0 1em 0; float:none;}
+.the-post .gallery.gallery-columns-3 figure {width:32%;}
+.the-post .gallery.gallery-columns-3 figure:nth-of-type(3n+3) {margin-right:0;}
+.the-post .gallery.gallery-columns-3 figure:nth-of-type(3n+4) {clear:left;}
+.the-post .gallery.gallery-columns-2 figure {width:49%;}
+.the-post .gallery.gallery-columns-2 figure:nth-of-type(even) {margin-right:0;}
+.the-post .gallery.gallery-columns-2 figure:nth-of-type(odd) {clear:left;}
+.the-post .gallery.gallery-columns-4 figure {width:23.25%;}
+.the-post .gallery.gallery-columns-4 figure:nth-of-type(4n+4) {margin-right:0;}
+.the-post .gallery.gallery-columns-4 figure:nth-of-type(4n+5) {clear:left;}
+.the-post .gallery.gallery-columns-5 figure {width:18%;}
+.the-post .gallery.gallery-columns-5 figure:nth-of-type(5n+5) {margin-right:0;}
+.the-post .gallery.gallery-columns-5 figure:nth-of-type(5n+6) {clear:left;}
+.the-post .gallery.gallery-columns-6 figure {width:14.2%;}
+.the-post .gallery.gallery-columns-6 figure:nth-of-type(6n+6) {margin-right:0;}
+.the-post .gallery.gallery-columns-6 figure:nth-of-type(6n+7) {clear:left;}
+.the-post .gallery.gallery-columns-7 figure {width:12%;}
+.the-post .gallery.gallery-columns-7 figure:nth-of-type(7n+7) {margin-right:0;}
+.the-post .gallery.gallery-columns-7 figure:nth-of-type(7n+8) {clear:left;}
+.the-post .gallery.gallery-columns-8 figure {width:10.2%;}
+.the-post .gallery.gallery-columns-8 figure:nth-of-type(8n+8) {margin-right:0;}
+.the-post .gallery.gallery-columns-8 figure:nth-of-type(8n+9) {clear:left;}
+.the-post .gallery.gallery-columns-9 figure {width:8.85%;}
+.the-post .gallery.gallery-columns-9 figure:nth-of-type(9n+9) {margin-right:0;}
+.the-post .gallery.gallery-columns-9 figure:nth-of-type(9n+10) {clear:left;}
+/* ----------- */
+
+/* CATEGORY PAGE */
+.page-title {
+    font-weight: 400;
+    margin: 5px 0px -1px 0px;
+    padding-top: 5px;
+    border-bottom: solid 1px #333;
+    display: inline-block;
+    padding-bottom: 6px;
+    font-size: 21pt;
+    font-family: "Austin News Deck Semibold",Georgia,Times,serif;
+}
+.page-header {
+    border-bottom: solid 1px #f1f1f1;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+/* ----------- */
+
+/* Next and Previous Article Box */
+#next-article { border: solid 1px #ddd; cursor: pointer; position: fixed; top: 75%; right: 0px; height: 100px; z-index: 99; background: #fcfcfc; }
+.next-arrow { position: absolute; background: #fafafa; height: 102px; right: -1px; top: -1px; border-left: solid 1px #ddd; z-index: 4; }
+.next-arrow img { margin-top: 32px; padding: 8px; }
+.next-article-link { margin-right: -280px; }
+.next-article-link .next-span { z-index: 2; width: 80px; position: absolute; bottom: 5px; left: 109px; border-top: solid 1px #ddd; color: #666; font-size: 9pt; }
+#previous-article { border: solid 1px #ddd; cursor: pointer; position: fixed; top: 75%; left: 0px; height: 100px; z-index: 99; background: #fcfcfc; }
+.previous-arrow { position: absolute; background: #fafafa; height: 102px; left: -3px; top: -1px; border-right: solid 1px #ddd; z-index: 4; }
+.previous-arrow img { margin-top: 32px; padding: 8px; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.previous-article-link { margin-left: -291px; }
+.previous-article-link .previous-span { z-index: 2; width: 100px; position: absolute; bottom: 5px; right: 179px; border-top: solid 1px #ddd; color: #666; font-size: 9pt; }
+.next-previous-article img { height: 100px; width: auto; }
+.next-previous-article .the-image { width: 100px; overflow: hidden; height: 100px; float: left; }
+.next-previous-article .the-text { font-size: 11pt; color: #263034; font-weight: 600; line-height: 14pt;width: 170px; display: block; float: left; padding: 7px 10px 0px 10px; z-index: 3; position:relative; background: #fcfcfc; }
+.next-previous-article i { width: 30px; text-align: center; line-height: 100px; }
+/* ----------- */
+
+/* BusinessTech Table Styling */
+.bt_table { width: 100%; overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar; -webkit-overflow-scrolling: touch;  color: #333;  font-weight: 400; font-family: "ProximaNova", "Helvetica Neue", "Helvetica", Roboto, Arial, sans-serif; font-size: 1.125rem; line-height: 1.75rem; margin-bottom: 20px; }
+.bt_table table {font-size: 12px; width: 100%; border-collapse: collapse; }
+.bt_table tr { border-bottom: solid 1px #d9d9d9; }
+.bt_table th { border-bottom: solid 3px #D9D9D9; color: #333; font-weight: bold; background: #ebebeb; text-align: left; }
+.bt_table table { border-bottom: solid 3px #ddd; }
+.bt_table table ul li { font-size: 12px !important; color: #364444 !important; line-height: 16px !important; }
+.bt_table table ul { padding-left: 12px !important; }
+/* ----------- */
+
+/* Rotate element */
+.rotate-0 {
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.rotate-180 {
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+/* ----------- */
+
+/* Responsive first step */
+@media screen and (max-width: 1010px) {
+    .feature_ad { float: none; margin: 0 auto; }
+    .feature_article_container { border-bottom: solid 1px #eee; margin-bottom: 20px; display: block;  padding-bottom: 20px; width: 100%; }
+    .feature_ad { margin-bottom: 30px; }
+    .site { width: auto; padding: 0px 15px; overflow: hidden; border: none; }
+    .site-inner { width: 700px; margin: 0 auto; }
+    #main { margin: 0px; margin-top: 50px; }
+    .feature_article { margin: 0px; width: 100%; float: none; }
+    .feature_article .post-thumbnail { height: auto; max-height: 230px; min-height: 230px; overflow: hidden; line-height: 0px; }
+    .feature_article .post-thumbnail img { margin-top: 0px; }
+    .feature_top_row .row_article .post-thumbnail { display: block;  width: 120px; height: 80px; float: left; overflow: hidden; margin-right: 15px; min-height: 0px; }
+    .ad { margin: 0 auto; width: fit-content;}
+    .mobile-article-leaderboard .ad { width: fit-content;}
+    .feed_article_container { width: auto; float: none; }
+    .feed_article .post-thumbnail { display: block; width: 120px; height: 80px; float: left; overflow: hidden; margin-right: 15px; min-height: 0px; }
+    .feed_article .post-thumbnail img { height: 100%; width: auto; margin-top: 0px; }
+    .feed_article header { padding-left: 135px; }
+    .feed_article header { padding-left: 135px; }
+    .row_article_container { width: auto; float: none; display: block; margin: 0px; border: none; }
+    .mobile_row_article_container { display: block; }
+    .row_article_container .row_article { width: 100%; }
+    .row_article_container .category-caption { margin-top: 0px; margin-bottom: 0px; }
+    .row_article_container_line { display: none; }
+    .row_article .post-thumbnail { width: 100%; margin-bottom: 10px; }
+    .row_article .post-thumbnail img { height: auto; width: 100%; margin-top: 0px; margin-left: 0px; }
+    .row_article header { position: inherit;  padding: 0px; }
+    .row_article { overflow: auto; padding-bottom: 20px; border-bottom: solid 1px #eee; margin-bottom: 20px; }
+    .below_row_article_container { width: 100%; display: block; }
+    .below_row_article_container .row_article { width: 100%; }
+    .below_row_article_container .entry-header { padding-top: 0px; padding-left: 0px; }
+    .below_row_article_container .row_article .post-thumbnail { width: 100%; height: auto; margin-bottom: 10px; }
+    .below_row_article_container .row_article .post-thumbnail img { width: 100%; height: auto; }
+    .below_row_article_container .ad { width: 100%; }
+    .feed_artice_side { float: none; width: 100%; margin-top: 30px; }
+    #wallpaper_ad { display: none; }
+    .site-footer { width: auto; }
+    .site-footer .footer-sub-menu { display: none; }
+    .site-branding { display: none; }
+    .masthead { display: none; }
+    .menu { display: none; }
+    .entry-title { line-height: 13pt; margin-top: 0px; }
+    .entry-title a { font-size: 13pt; line-height: 13pt; }
+    .meta_date { margin-top: 3px; font-size: 10pt; }
+    .category-caption { font-size: 11pt; display: block; }
+    .presented-title { padding: 3px 6px; }
+    .side-feed h2 { line-height: 13pt; }
+    .mobile-footer-menu { display: block; }
+    .mobile-site-header { display: -webkit-flex;  display: flex;  }
+    .share-hide { display: none; }
+    .page-title { font-size: 15pt; }
+    .type-page { padding-top: 40px; }
+    .home-posts-navigation { width: auto; float: none; }
+    .page-header { margin-top: 45px; }
+    .page-posts-navigation { width: auto; float: none; }
+    
+    .the-post { width: auto; float: none; padding: 0px 0px 20px; border: none; }
+    .single-side { width: 100%; float: none; }
+    .article-newsletter { display: none; }
+    .counter { display: none; }
+    .next-previous-article { display: none; }
+    
+    .main-side-ad { margin-bottom: 20px; display: none; }
+    .float-newsletter-bar { padding: 10px 0px; }
+    .float-newsletter-bar form { width: 90%; }
+    .float-newsletter-bar .subscribe-text { margin-left: 0px; }
+    .float-newsletter-bar .newsletter-caption { display: none; }
+    .float-newsletter-bar form { margin-left: 15px;}
+    .feature_article header { width: auto; position: relative; background: none;  padding: 0px; pointer-events: all; min-width: auto; }
+    .feature_article header .entry-title a { color: #333; }
+    .feature_article header .category-caption { color: #274d89; }
+    .article-top-bar { display: none; }
+    .article-top-newsletter { display: none; }
+    
+}
+
+/* Responsive second step */
+@media screen and (max-width: 710px) {
+    .feature_article_container { margin-top: -15px; }
+    .site-inner { width: auto; }
+    .feature_article .category-caption { color: #274d89; }
+    .feature_article .meta_date { text-shadow: none; }
+    .feature_article .category-caption { text-shadow: none; }
+    .feature_article .meta_date { color: #ababab; }
+}
+
+/*Footer logos responsiveness*/
+@media screen and (max-width: 768px) {
+    .footer-logos-inner {
+        width: 100%;
+    }
+    .footer-logos-three-columns .footer-logos-column {
+        width: 100%;
+    }
+    .footer-logos img {
+        padding: 25px 0px;
+        width: auto;
+    }
+}
